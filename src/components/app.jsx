@@ -1,6 +1,9 @@
 import React from 'react';
-import {Router, Route, hashHistory, IndexRoute} from 'react-router';
+import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import Layout from './layout/layout';
+
+import CustomerList from './customer/customer_list'
+import CustomerNew from './customer/customer_new';
 
 const Home = () => {
 	return (<div className="panel panel-headline">
@@ -21,9 +24,11 @@ const Home = () => {
 class App extends React.Component {
 	render() {
 		return (
-			<Router history={hashHistory}>
+			<Router history={browserHistory}>
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Home}/>
+					<Route path='/customer/list' component={CustomerList}/>
+					<Route path='/customer/new' component={CustomerNew}/>
 				</Route>
 			</Router>
 		);
