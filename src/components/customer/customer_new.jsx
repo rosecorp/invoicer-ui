@@ -4,12 +4,13 @@ import { Field, reduxForm } from 'redux-form';
 import { createCustomer } from '../../actions/index';
 import { connect } from 'react-redux';
 import {Link} from 'react-router';
+import _ from 'lodash';
 
 const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
   <div className="form-group">
     <label>{label}</label>
       <input {...input} className="form-control" type={type} placeholder={label}/>
-      {touched && (error && <div className="text-help">{error}</div>)}
+      {touched && (error && <div><span className="help-block">{error}</span></div>)}
   </div>
 )
 
@@ -30,7 +31,7 @@ class CustomerNew extends Component {
           <Field label="First name" name="firstName" type="text" component={renderField} />
           <Field label="Last name" name="lastName" type="text" component={renderField} />
           <button type="submit" className="btn btn-primary">New</button>
-          <Link to="/customer/list" className="btn btn-danger" >Cancel</Link>
+          <Link to="/customer/list" className="btn btn-danger">Cancel</Link>
         </form>
       </div>
     );

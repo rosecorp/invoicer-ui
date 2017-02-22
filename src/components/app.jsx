@@ -29,6 +29,7 @@ class App extends React.Component {
 					<IndexRoute component={Home}/>
 					<Route path='/customer/list' component={CustomerList}/>
 					<Route path='/customer/new' component={CustomerNew}/>
+					<Route path='/customer/delete/:customerId' component={CustomerList}/>
 				</Route>
 			</Router>
 		);

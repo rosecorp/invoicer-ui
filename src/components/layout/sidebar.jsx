@@ -12,8 +12,8 @@ class SideBar extends React.Component {
 						<div className="sidebar-scroll">
 							<nav>
 								<ul className="nav">
-									<li><a href="index.html" className="active"><i className="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
-                  <li><Link to="/customer/list"><span>Customers</span></Link></li>
+									<li><Link to="/"><i className="fa fa-tachometer"></i> <span>Dashboard</span></Link></li>
+                  <li><Link to="/customer/list"><i className="fa fa-user"></i> <span>Customers</span></Link></li>
 								</ul>
 							</nav>
 						</div>
