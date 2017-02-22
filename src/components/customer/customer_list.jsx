@@ -18,7 +18,6 @@ class CustomerList extends Component {
         pathname: '/customer/list'
         });
       });
-
   }
 
   renderCustomers() {
