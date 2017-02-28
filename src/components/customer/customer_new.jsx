@@ -19,7 +19,7 @@ class CustomerNew extends Component {
    router: PropTypes.object
  };
   onSubmit(props){
-    this.props.createCustomer(props).then(()=>{this.context.router.push('/customer/list');});
+    this.props.createCustomer(props).then(()=>{this.context.router.push('/customers');});
   }
   render() {
     const { handleSubmit } = this.props;
@@ -31,7 +31,7 @@ class CustomerNew extends Component {
           <Field label="First name" name="firstName" type="text" component={renderField} />
           <Field label="Last name" name="lastName" type="text" component={renderField} />
           <button type="submit" className="btn btn-primary">New</button>
-          <Link to="/customer/list" className="btn btn-danger">Cancel</Link>
+          <Link to="/customers" className="btn btn-danger">Cancel</Link>
         </form>
       </div>
     );

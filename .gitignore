@@ -28,6 +28,7 @@ node_modules
 
 # Ignore build files
 public
+target
 
 #ignore intellij files
 *.iml

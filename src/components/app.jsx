@@ -4,6 +4,7 @@ import Layout from './layout/layout';
 
 import CustomerList from './customer/customer_list'
 import CustomerNew from './customer/customer_new';
+import InvoiceList from './invoice/invoice_list';
 
 const Home = () => {
 	return (<div className="panel panel-headline">
@@ -27,9 +28,10 @@ class App extends React.Component {
 			<Router history={browserHistory}>
 				<Route path='/' component={Layout}>
 					<IndexRoute component={Home}/>
-					<Route path='/customer/list' component={CustomerList}/>
+					<Route path='/customers' component={CustomerList}/>
 					<Route path='/customer/new' component={CustomerNew}/>
 					<Route path='/customer/delete/:customerId' component={CustomerList}/>
+					<Route path='/company/:id/invoices' component={InvoiceList}/>
 				</Route>
 			</Router>
 		);

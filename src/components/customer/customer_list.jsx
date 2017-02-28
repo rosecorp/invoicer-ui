@@ -15,7 +15,7 @@ class CustomerList extends Component {
   onDeleteClick(customerId) {
     this.props.deleteCustomer(customerId)
       .then(() => { this.context.router.push({
-        pathname: '/customer/list'
+        pathname: '/customers'
         });
       });
   }
