@@ -1,0 +1,18 @@
+.invoice.panel-body {
+
+}
+
+.invoice .row {
+   border-bottom: 1px solid #d6d6c2;
+   border-left: 3px solid #fff;
+   padding: 15px;
+}
+
+.invoice .row:hover {
+  background-color: #ebebfa;
+  border-left: 3px solid #3333cc;
+}
+
+.invoice .heading {
+   font-size: 105%;
+}

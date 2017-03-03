@@ -14,7 +14,7 @@ class SideBar extends React.Component {
 								<ul className="nav">
 									<li><Link to="/"><i className="fa fa-tachometer"></i> <span>Dashboard</span></Link></li>
                   <li><Link to="/customers"><i className="fa fa-user"></i> <span>Customers</span></Link></li>
-                  <li><Link to="/company/1/invoices"><i className="fa fa-user"></i> <span>Invoices</span></Link></li>
+                  <li><Link to="/company/1/invoices"><i className="fa fa-book"></i> <span>Invoices</span></Link></li>
 								</ul>
 							</nav>
 						</div>

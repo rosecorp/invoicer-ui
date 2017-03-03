@@ -3,10 +3,12 @@ import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import promise from 'redux-promise';
 import CustomerReducer from './reducer_customer';
+import InvoiceReducer from './reducer_invoice';
 import { reducer as formReducer } from 'redux-form';
 
 const configStoreData = combineReducers({
 	customers: CustomerReducer,
+  invoices: InvoiceReducer,
 	form: formReducer
 });
 
